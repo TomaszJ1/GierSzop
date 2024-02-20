@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-    <h1>Dzieńdoberek</h1>
+    <h1>Gierszop</h1>
     </>
   )
 }
