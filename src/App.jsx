@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <>
-        <GameList games={games}/>
+    <h1>Gierszop</h1>
     </>
   )
 }
