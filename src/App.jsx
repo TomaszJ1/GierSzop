@@ -1,6 +1,7 @@
 import gameService from "./services/games"
 import { useState, useEffect } from "react";
 import Homunculus from "./components/Homunculus";
+import GameList from "./components/GameList";
 
 const App = () => {
   
@@ -15,10 +16,11 @@ const App = () => {
     
   }, [])
 
+  console.log(games)
 
   return (
     <>
-    <Homunculus/>
+        <GameList games={games}/>
     </>
   )
 }

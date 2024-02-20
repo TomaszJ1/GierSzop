@@ -1,6 +1,6 @@
 const Homunculus = () => {
   return (
-    <html>
+    <>
       <head>
 
       </head>
@@ -10,7 +10,7 @@ const Homunculus = () => {
           Footer
         </footer>
       </body>
-    </html>
+    </>
   )
 }
 
