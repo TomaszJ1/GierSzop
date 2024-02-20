@@ -9,12 +9,99 @@
       "id": 2,
       "name": "Alan Wake",
       "publisher": 1
+    },
+    {
+      "id": 3,
+      "name": "Ōkami",
+      "publisher": 2
+    },
+    {
+      "id": 4,
+      "name": "Resident Evil",
+      "publisher": 2
+    },
+    {
+      "id": 5,
+      "name": "Resident Evil: Revelations",
+      "publisher": 2
+    },
+    {
+      "id": 6,
+      "name": "Resident Evil 2",
+      "publisher": 2
+    },
+    {
+      "id": 7,
+      "name": "Resident Evil 3",
+      "publisher": 2
+    },
+    {
+      "id": 8,
+      "name": "Resident Evil 4",
+      "publisher": 2
+    },
+    {
+      "id": 9,
+      "name": "Resident Evil 5",
+      "publisher": 2
+    },
+    {
+      "id": 10,
+      "name": "Devil May Cry 5",
+      "publisher": 2
+    },
+    {
+      "id": 11,
+      "name": "Call of Duty: Warzone",
+      "publisher": 3
+    },
+    {
+      "id": 12,
+      "name": "Half-Life",
+      "publisher": 4
+    },
+    {
+      "id": 13,
+      "name": "Dota 2",
+      "publisher":4
     }
   ],
   "publishers": [
     {
       "id": 1,
       "name": "Epic Games"
+    },
+    {
+      "id": 2,
+      "name": "CAPCOM"
+    },
+    {
+      "id": 3,
+      "name": "AcTiVision"
+    },
+    {
+      "id": 4,
+      "name": "VALVe"
+    },
+    {
+      "id": 5,
+      "name": "Nintendo"
+    },
+    {
+      "id": 6,
+      "name": "Microsoft"
+    },
+    {
+      "id": 7,
+      "name": "BLIZZARD"
+    },
+    {
+      "id": 8,
+      "name": "RIOT GAMES"
+    },
+    {
+      "id": 9,
+      "name": "HI-REZ Studios"
     }
   ]
 }
