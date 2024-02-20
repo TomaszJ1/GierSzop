@@ -2,6 +2,7 @@ import gameService from "./services/games"
 import { useState, useEffect } from "react";
 import Homunculus from "./components/Homunculus";
 import GameList from "./components/GameList";
+import "./styles/App.css"
 
 const App = () => {
   
@@ -16,12 +17,11 @@ const App = () => {
     
   }, [])
 
-  console.log(games)
 
   return (
-    <>
-    <h1>Gierszop</h1>
-    </>
+    <div className="app-container">
+        <GameList games={games}/>
+    </div>
   )
 }
 

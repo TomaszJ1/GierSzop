@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px;
+}
+
+.container .game-item {
+    width: 20%;
+}
+
+.container .game-item img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.container .game-item p {
+    font-size: 20px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.container>li {
+    list-style-type: none;
+}
