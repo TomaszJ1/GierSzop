@@ -1,41 +1,56 @@
 import gameService from "./services/games"
 import { useState, useEffect } from "react";
-import Homunculus from "./components/Homunculus";
-import GameList from "./components/GameList";
+import Games from "./pages/Games";
+
+import PathConstants from "./routes/pathConstants"
+import { RouterProvider,
+} from "react-router-dom"
+
+
 import "./styles/App.css"
 
 const App = () => {
 
+  const Home = React.lazy(() => import("./pages/Home"))
+  const About = React.lazy(() => import("./pages/About"))
+  const Games = React.lazy(() => import("./pages/Games"))
+  const Contact= React.lazy(() => import("./pages/Contact"))
+
+
+
   // https://semaphoreci.com/blog/routing-layer-react
-  const PathConstants = {
-    // MAIN: "/",
-    GAMES: "/games",
-    ABOUT: "/about",
-    CONTACT: "/contact",
-  }
-  const routes = [
-    // example { path: PathConstants.TEAM, element: <TeamPage /> },
-    { path: PathConstants.GAMES, element: <GameList games={games}/> },
-    // ...
-  ]
+  //--------------------------------------------------
+  // npm install react-router-dom
+  //--------------------------------------------------
+  const router = createBrowserRouter([
+    {
+      // parent route component
+      element: <Layout />,
+      // child route components
+      children: [
+        { path: PathConstants.HOME, element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/games", element: <Games /> },
+        { path: "/contact", element: <Contact /> },
+      ],
+    },
+  ])
 
   
+
   const [games, setGames] = useState([])
 
-  useEffect(() => {
-    gameService
-      .getAll()
-      .then(response => {
-        setGames(response.data)
-      })
-    
+    useEffect(() => {
+      gameService
+        .getAll()
+        .then(response => {
+          setGames(response.data)
+        })
   }, [])
 
 
   return (
-    <div className="app-container">
-        <GameList games={games}/>
-    </div>
+    <RouterProvider router={router}/>
   )
 }
 

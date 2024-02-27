@@ -1,7 +1,7 @@
 import image from "../images/0.jpg"
-import "../styles/GameList.css"
+import "../styles/Games.css"
 
-const GameList = ({games}) => {
+const Games = ({games}) => {
   return (
     <div>
       <ol className="container">
@@ -16,4 +16,4 @@ const GameList = ({games}) => {
   )
 }
 
-export default GameList
+export default Games
