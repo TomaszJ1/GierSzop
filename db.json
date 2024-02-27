@@ -2,13 +2,14 @@
   "games": [
     {
       "id": 1,
-      "name": "Alan Wake 2",
+      "name": "Alan Wake",
       "publisher": 1
     },
     {
       "id": 2,
-      "name": "Alan Wake",
+      "name": "Alan Wake 2",
       "publisher": 1
+      
     },
     {
       "id": 3,
