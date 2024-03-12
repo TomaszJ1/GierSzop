@@ -1,4 +1,3 @@
-import image from "../images/0.jpg"
 import "../styles/Games.css"
 
 import gameService from "../services/games"
@@ -23,7 +22,7 @@ useEffect(() => {
       <ol className="container">
       {games.map(game =>
         <li className='game-item' key={game.id}>
-          <img src={image}/>
+          <img src={"src/images/" + game.id + ".jpg"}/>
           <p>{game.name}</p>
         </li>
       )}
