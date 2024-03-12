@@ -1,21 +1,15 @@
-import gameService from "./services/games"
-import { useState, useEffect } from "react";
-import Games from "./pages/Games";
 
-import PathConstants from "./routes/pathConstants"
-import { RouterProvider,
-} from "react-router-dom"
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+
+import routes from "./routes"
+
 
 
 import "./styles/App.css"
+import Layout from "./components/Layout.jsx";
 
 const App = () => {
-
-  const Home = React.lazy(() => import("./pages/Home"))
-  const About = React.lazy(() => import("./pages/About"))
-  const Games = React.lazy(() => import("./pages/Games"))
-  const Contact= React.lazy(() => import("./pages/Contact"))
-
 
 
   // https://semaphoreci.com/blog/routing-layer-react
@@ -27,30 +21,13 @@ const App = () => {
       // parent route component
       element: <Layout />,
       // child route components
-      children: [
-        { path: PathConstants.HOME, element: <Home /> },
-        { path: "/about", element: <About /> },
-        { path: "/games", element: <Games /> },
-        { path: "/contact", element: <Contact /> },
-      ],
+      children: routes,
     },
   ])
 
-  
-
-  const [games, setGames] = useState([])
-
-    useEffect(() => {
-      gameService
-        .getAll()
-        .then(response => {
-          setGames(response.data)
-        })
-  }, [])
-
 
   return (
-    <RouterProvider router={router}/>
+    <RouterProvider router={router}></RouterProvider>
   )
 }
 

@@ -1,14 +1,15 @@
-import PathConstants from "../routes/pathConstants.jsx"
+import PathConstants from "../routes/pathConstants"
 import { Link } from "react-router-dom"
+
 
 const Header = () => {
   return (
     <>
         <header>
-        <h1>Witamy w GierSzopie!</h1>
-        <div class="szukajka">        
-        <input type="text" id="szukajka" placeholder="Fraza wyszukiwania..."/> 
-        <b><img src="szukajka.png"/></b>
+          <h1>Witamy w GierSzopie!</h1>
+          <div className="szukajka">        
+         <input type="text" id="szukajka" placeholder="Fraza wyszukiwania..."/> 
+          <b><img src="szukajka.png"/></b>
         </div>
 
         </header>
