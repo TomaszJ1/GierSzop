@@ -1,27 +1,33 @@
-import gameService from "./services/games"
-import { useState, useEffect } from "react";
-import Homunculus from "./components/Homunculus";
-import GameList from "./components/GameList";
+
+
+import { RouterProvider, createBrowserRouter } from "react-router-dom"
+
+import routes from "./routes"
+
+
+
 import "./styles/App.css"
+import Layout from "./components/Layout.jsx";
 
 const App = () => {
-  
-  const [games, setGames] = useState([])
 
-  useEffect(() => {
-    gameService
-      .getAll()
-      .then(response => {
-        setGames(response.data)
-      })
-    
-  }, [])
+
+  // https://semaphoreci.com/blog/routing-layer-react
+  //--------------------------------------------------
+  // npm install react-router-dom
+  //--------------------------------------------------
+  const router = createBrowserRouter([
+    {
+      // parent route component
+      element: <Layout />,
+      // child route components
+      children: routes,
+    },
+  ])
 
 
   return (
-    <div className="app-container">
-        <GameList games={games}/>
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   )
 }
 
