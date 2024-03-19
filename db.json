@@ -104,5 +104,26 @@
       "id": 9,
       "name": "HI-REZ Studios"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "skam34",
+      "password": "2004",
+      "is_admin": true
+    },
+    {
+      "id": 2,
+      "username": "bamilos",
+      "password": "2003",
+      "is_admin": true
+    },
+    {
+      "id": 3,
+      "username": "tomolo",
+      "password": "2005",
+      "is_admin": true
+    }
   ]
+  
 }
