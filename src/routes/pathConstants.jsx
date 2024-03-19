@@ -4,6 +4,7 @@ const PathConstants = {
     ABOUT: "about",
     CONTACT: "contact",
     GAMES: "games",
+    SEARCH: "search/:zapytanie",
 }
 
 export default PathConstants
