@@ -1,0 +1,18 @@
+.search-button {
+    background-color: #007bff; /* Change background color */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Add padding */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+  }
+  
+  .search-button img {
+    width: 20px; /* Adjust icon size */
+    height: 20px;
+  }
+  

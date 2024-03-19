@@ -31,7 +31,7 @@ const Header = () => {
               value={searchQuery}
               onChange={handleChange}
             />
-            <button type="submit">
+            <button type="submit" className="szukanie">
               <img src={searchIcon} alt="Search" />
             </button>
           </div>

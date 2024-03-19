@@ -44,3 +44,33 @@ main {
     width: 70%;
     margin: 0 auto;
 }
+.search-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .szukanie {
+    background-color: #007bff; /* Blue color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white; /* Text color */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .szukanie:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+  }
+  
+  .szukanie img {
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    margin-right: 5px; /* Add some space between the icon and text */
+  }
+  

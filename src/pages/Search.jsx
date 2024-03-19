@@ -1,4 +1,5 @@
 // Search.jsx
+import "../styles/Games.css"
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
