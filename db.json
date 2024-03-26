@@ -1,4 +1,7 @@
 {
+  "settings": {
+    "logged_in": 4
+  },
   "games": [
     {
       "id": 1,
@@ -123,6 +126,12 @@
       "username": "tomolo",
       "password": "2005",
       "is_admin": true
+    },
+    {
+      "id": 4,
+      "username": "dodo",
+      "password": "smrodo",
+      "is_admin": false
     }
   ]
   

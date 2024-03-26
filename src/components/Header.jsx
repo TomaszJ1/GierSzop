@@ -18,6 +18,7 @@ const Header = () => {
             <Link to={PathConstants.GAMES}>Gry</Link>
             <Link to={PathConstants.ABOUT}>O nas</Link>
             <Link to={PathConstants.CONTACT}>Kontakt</Link>
+            <Link to={PathConstants.ACCOUNT}>Konto</Link>
         </nav>
 
     </>
