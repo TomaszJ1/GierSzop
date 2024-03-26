@@ -1,0 +1,88 @@
+.container {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    margin: 20px 50px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-image {
+    width: 35%;
+    padding: 20px;
+}
+
+.product-details {
+    width: 50%;
+    padding: 20px;
+}
+
+.product-description {
+    width: 100%;
+    padding: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #545454;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.game-item {
+    list-style-type: none;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.game-item img {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.game-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center; 
+    color: #333333; 
+}
+
+.game-item a:hover {
+    color: #0056b3;
+}
+
+ a {
+    text-decoration: none;
+    color: #007bff; 
+    transition: color 0.3s ease; 
+}

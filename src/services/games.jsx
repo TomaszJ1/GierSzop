@@ -6,7 +6,7 @@ const getAll = () => {
 }
 
 const getOne = (id) => {
-  return axios.get(`${baseUrl}/${id}`)
+  return axios.get(`${baseUrl}/${1}`)
 }
 
 const create = newObject => {
