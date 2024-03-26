@@ -2,13 +2,16 @@ import "../styles/Game.css"
 
 import gameService from "../services/games"
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+
+import { useLocation } from 'react-router-dom';
 
 const Game = () => {
+    const location = useLocation();
+    const id = location.state;
     const [game, setGame] = useState([])
     useEffect(() => {
       gameService
-        .getOne()
+        .getOne(id)
         .then(response => {
           setGame(response.data)
         })
@@ -18,7 +21,7 @@ const Game = () => {
       <div key={game.id}>
         <ol className="container">
           <li className="product-image">
-            <img src={"src/images/" + game.id + ".jpg"}/>
+            <img src={"src/images/" + game.id + ".jpg"} alt="Product image"/>
           </li>
           <li className="product-details">
             <h1>{game.name}</h1>
@@ -29,7 +32,7 @@ const Game = () => {
         </ol>
         <ol className="product-description">
           <h2>Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor nulla vel lectus bibendum, quis condimentum massa varius. Duis dictum posuere risus a finibus. Fusce ac tortor ut velit scelerisque posuere. Donec eget mauris tincidunt, ultricies arcu sit amet, pretium sem. Sed auctor suscipit convallis. Integer feugiat ante eu dolor vehicula, nec laoreet leo efficitur. Sed sed nisi id mi cursus fringilla. Nunc auctor justo vel eros gravida, vel tincidunt lorem fringilla. Maecenas nec ipsum id elit efficitur pharetra.</p>
+          <p>{game.description}</p>
         </ol>
       </div>
     )
