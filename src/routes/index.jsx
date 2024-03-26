@@ -1,6 +1,5 @@
 import React from "react"
 import PathConstants from "./pathConstants"
-import { useParams } from "react-router-dom"
 
 const Home = React.lazy(() => import("../pages/Home"))
 const About = React.lazy(() => import("../pages/About"))
